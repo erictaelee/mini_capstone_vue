@@ -1,9 +1,10 @@
 <template>
-  <div class="home">
+  <div class="products-index">
     <br />
   <div class="row">
   <div class="col-sm-4" v-for="product in products">
     <div class="card">
+      <img style="width: 200px" v-bind:src="product.image_url" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
